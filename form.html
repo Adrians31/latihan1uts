@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styleform.css" />
+  </head>
+  <body>
+    <form>
+      <h2>Registrasi</h2>
+      <label for="no-pendaftaran">No Pendaftaran:</label>
+      <input type="text" id="no-pendaftaran" name="no-pendaftaran" required />
+
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required />
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" required></textarea>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label>Jenis Kelamin:</label>
+      <div>
+        <input
+          type="radio"
+          id="laki-laki"
+          name="jenis-kelamin"
+          value="laki-laki"
+          required
+        />
+        <label for="laki-laki">Laki-laki</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          id="perempuan"
+          name="jenis-kelamin"
+          value="perempuan"
+          required
+        />
+        <label for="perempuan">Perempuan</label>
+      </div>
+
+      <label for="no-telp">No.Telp:</label>
+      <input type="tel" id="no-telp" name="no-telp" required />
+
+      <button type="submit">Submit</button>
+      <button type="reset">Cancel</button>
+    </form>
+  </body>
+</html>
